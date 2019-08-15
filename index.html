@@ -1,0 +1,130 @@
+<!-- Developed by techygamerkid (Isaac Hatfield) -->
+<Developed by techygamerkid (Isaac Hatfield)>
+<!DOCTYPE html>
+<html>
+<head>
+<title>techygamerkid</title>
+</head>
+<body>
+<style>
+p {
+  font-family: Roboto, Helvetica;
+  font-size: 120%;
+}
+h1 {
+  font-family: Roboto, Helvetica;
+}
+h2 {
+  font-family: Roboto, Helvetica;
+  font-size: 150%;
+}
+quote {
+  font-family: Roboto, Helvetica;
+  font-style: italic;
+  font-size: 300%;
+}
+body {
+	background-color: #73a9ff;
+}
+small {
+  font-family: Roboto, Helvetica;
+  font-size: 75%;
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+/* Style the header */
+.header {
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+  padding: 10px 16px;
+  background: #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+div.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+</style>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<div class="header" id="myHeader">
+<center><h1><img src="logo.png" alt="techygamerkid" height="60" width="512"></h1></center>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="content">
+<center><small>Website built by techygamerkid (Isaac Hatfield)</small></center>
+</div>
+</body>
+</html>
