@@ -2,19 +2,18 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
-  font-size: 100%;
+  font-size: 120%;
 }
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
-  font-size: 100%;
   color: #FFFFFF;
 }
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
-  font-size: 100%;
+  font-size: 150%;
   display: inline;
   float: center;
 }
@@ -89,7 +88,7 @@ div.header {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 5px 12px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
