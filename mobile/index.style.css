@@ -89,11 +89,11 @@ div.header {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 60px 128px;
+  padding: 30px 64px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 64px;
+  font-size: 32px;
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
