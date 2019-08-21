@@ -107,10 +107,3 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
-#link1 {float:left;}
-#link2 {padding-left : 20px; float:left;}
-@media only screen and (max-width: 1080px) {
-body {
-	background-color: lightblue;
-}
-}

@@ -1,3 +1,6 @@
+if (screen.width <= 699) {
+document.location = "YOUR-MOBILE-SITE.com";
+}
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
