@@ -1,18 +1,18 @@
 p {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
-  color: #000000;
+  color: #FFFFFF;
   font-size: 120%;
 }
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
-  color: #000000;
+  color: #FFFFFF;
 }
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
-  color: #000000;
+  color: #FFFFFF;
   font-size: 150%;
   display: inline;
   float: center;
@@ -26,7 +26,12 @@ quote {
 body {
 	font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-	background-color: #FFFFFF;
+	background-color: #3492eb;
+}
+div.comtext {
+	width: 800px;
+	word-wrap: normal;
+	float: center;
 }
 small {
   font-family: 'Open Sans', sans-serif;
