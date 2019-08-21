@@ -1,5 +1,6 @@
 if (screen.width <= 699) {
-document.location = "mobile.html";
+document.location = "mobile/index.html";
+window.location = "techygamerkid.github.io/mobile/index.html";
 }
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
