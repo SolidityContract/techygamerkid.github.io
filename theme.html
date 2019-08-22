@@ -9,15 +9,18 @@
 <script>
 function themeLight() {
   document.cookie = "theme=Light; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  console.log("Set the theme to Light")
+  console.log("Set the theme to Light");
 }
 function themeDark() {
   document.cookie = "theme=Dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  console.log("Set the theme to Dark")
+  console.log("Set the theme to Dark");
 }
 function themeCarbon() {
   document.cookie = "theme=Carbon; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  console.log("Set the theme to Carbon")
+  console.log("Set the theme to Carbon");
+}
+if (document.cookie == "theme=Dark") {
+  document.getElementById('target').style.background-color = '#FFFFFF;'
 }
 </script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300&display=swap" rel="stylesheet">
