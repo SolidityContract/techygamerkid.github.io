@@ -20,7 +20,9 @@ function themeCarbon() {
   console.log("Set the theme to Carbon");
 }
 if (document.cookie == "theme=Dark") {
-  document.getElementById('target').style.background-color = '#FFFFFF;'
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
 }
 </script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300&display=swap" rel="stylesheet">
