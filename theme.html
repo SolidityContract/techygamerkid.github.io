@@ -14,6 +14,9 @@ function themeLight() {
 function themeDark() {
   document.cookie = "theme=Dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
   console.log("Set the theme to Dark");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
 }
 function themeCarbon() {
   document.cookie = "theme=Carbon; expires=Fri, 31 Dec 9999 23:59:59 GMT";
