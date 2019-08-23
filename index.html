@@ -5,7 +5,60 @@
 <link rel="icon" href="icon.ico" type="image/ico">
 <title>techygamerkid</title>
 <link rel="stylesheet" href="index.style.css">
-<script src="script.js"></script>
+<script>
+if (screen.width >= 699 && screen.width <= 900) {
+document.location = "/landscape/index.html";
+}
+if (screen.width <= 699) {
+document.location = "/mobile/index.html";
+}
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+if (document.cookie == "theme=Dark") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-color: #242424}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+if (document.cookie == "theme=Light") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #3492eb}');
+  style.sheet.insertRule('.header {background-color: #FFFFFF}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+if (document.cookie == "theme=Carbon") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-image: url("carbon.png")}');
+  style.sheet.insertRule('.header {background-image: url("carbon.png")}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+if (document.cookie == "theme=Blend") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-image: url("carbon.png")}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+</script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300&display=swap" rel="stylesheet">
 </head>
 <body>
