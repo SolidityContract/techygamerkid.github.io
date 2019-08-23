@@ -1,0 +1,123 @@
+<!-- Developed by techygamerkid (Isaac Hatfield) -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="icon.ico" type="image/ico">
+<title>techygamerkid</title>
+<link rel="stylesheet" href="index.style.css"/>
+<script src="script.js"></script>
+<script>
+function themeLight() {
+  document.cookie = "theme=Light; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  console.log("Set the theme to Light");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #3492eb}');
+  style.sheet.insertRule('.header {background-color: #FFFFFF}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+function themeDark() {
+  document.cookie = "theme=Dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  console.log("Set the theme to Dark");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-color: #242424}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+function themeCarbon() {
+  document.cookie = "theme=Carbon; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  console.log("Set the theme to Carbon");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-image: url("carbon.png")}');
+  style.sheet.insertRule('.header {background-image: url("carbon.png")}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+function themeBlend() {
+  document.cookie = "theme=Blend; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  console.log("Set the theme to Blend");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-image: url("carbon.png")}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+if (document.cookie == "theme=Dark") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-color: #242424}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+if (document.cookie == "theme=Light") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #3492eb}');
+  style.sheet.insertRule('.header {background-color: #FFFFFF}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+if (document.cookie == "theme=Carbon") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-image: url("carbon.png")}');
+  style.sheet.insertRule('.header {background-image: url("carbon.png")}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+if (document.cookie == "theme=Blend") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-image: url("carbon.png")}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+</script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<center>
+<div class="header" id="myHeader">
+<div style="float:left;">
+<h2 style="padding-left:5px;padding-right:5px;"><a href="yhub.html"><button class="button button2">YHub</button></a></h2>
+<h2 style="padding-left:5px;padding-right:5px;"><a href="arcade.html"><button class="button button2">Arcade</button></a></h2>
+</div>
+<h2><a href="index.html"><img src="logo.png" alt="techygamerkid" height="60" width="512"></a></h2>
+<div style="float:right">
+<h2 style="padding-left:5px;padding-right:5px;"><a href="news.html"><button class="button button2">News</button></a></h2>
+<h2 style="padding-left:5px;padding-right:5px;"><a href="about.html"><button class="button button2">About</button></a></h2>
+</div>
+<hr>
+</div>
+</center>
+<br>
+<br>
+<div class="content">
+<br>
+<br>
+<br>
+<center>
+<p>Changes may only take place after going to another page/refreshing!</p>
+<h2 style="padding-left:5px;padding-right:5px;"><button class="button button2" onclick="themeLight()">Light</button></h2>
+<h2 style="padding-left:5px;padding-right:5px;"><button class="button button2" onclick="themeDark()">Dark</button></h2>
+<h2 style="padding-left:5px;padding-right:5px;"><button class="button button2" onclick="themeCarbon()">Carbon</button></h2>
+<h2 style="padding-left:5px;padding-right:5px;"><button class="button button2" onclick="themeBlend()">Blend</button></h2>
+</center>
+</div>
+</body>
+</html>
