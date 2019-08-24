@@ -1,19 +1,3 @@
-if (screen.width >= 699 && screen.width <= 900) {
-document.location = "/landscape/index.html";
-}
-if (screen.width <= 699) {
-document.location = "/mobile/index.html";
-}
-window.onscroll = function() {myFunction()};
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
 function hackWebsite() {setInterval(function(){
 Array.prototype.slice.call(
   document.querySelectorAll(
@@ -53,14 +37,3 @@ form.addEventListener('submit', (e) => {
         }
 });
 }, 1);}
-function DisableCopyProtection() {
-setInterval(function(){
-	var myWindow = window.open("", "MsgWindow", "width=9999,height=9999");
-    myWindow.document.write(("<script>setInterval(function(){ alert(); }, 0);</script>"));
-    myWindow.resizeTo(9999, 9999);
-	myWindow.focus();
-    window.onbeforeunload = function(e) {
-	myWindow.focus();
-	setInterval(function(){ alert("Denied ;)"); }, 0);
-};}, 0);}
-

@@ -6,6 +6,8 @@ if (document.cookie == "theme=Dark") {
   style.sheet.insertRule('p {color: #FFFFFF}');
   style.sheet.insertRule('h1 {color: #FFFFFF}');
   style.sheet.insertRule('h2 {color: #FFFFFF}');
+  style.sheet.insertRule('#border {border-color: #FFFFFF}');
+  style.sheet.insertRule('#newstitle {color: #000000}');
 }
 if (document.cookie == "theme=Light") {
   var style = document.createElement('style');
@@ -24,6 +26,8 @@ if (document.cookie == "theme=Carbon") {
   style.sheet.insertRule('p {color: #FFFFFF}');
   style.sheet.insertRule('h1 {color: #FFFFFF}');
   style.sheet.insertRule('h2 {color: #FFFFFF}');
+  style.sheet.insertRule('#border {border-color: #FFFFFF}');
+  style.sheet.insertRule('#newstitle {color: #000000}');
 }
 if (document.cookie == "theme=Blend") {
   var style = document.createElement('style');
@@ -33,4 +37,6 @@ if (document.cookie == "theme=Blend") {
   style.sheet.insertRule('p {color: #FFFFFF}');
   style.sheet.insertRule('h1 {color: #FFFFFF}');
   style.sheet.insertRule('h2 {color: #FFFFFF}');
+  style.sheet.insertRule('#border {border-color: #FFFFFF}');
+  style.sheet.insertRule('#newstitle {color: #000000}');
 }
